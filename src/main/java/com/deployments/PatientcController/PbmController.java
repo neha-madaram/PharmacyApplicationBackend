@@ -2,6 +2,7 @@ package com.deployments.PatientcController;
 
 import com.deployments.PatientService.PbmService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +24,7 @@ public class PbmController {
     {
         return "inserted";
     }
+
 
 
 }
