@@ -32,13 +32,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Override
     public void configure(ClientDetailsServiceConfigurer clientDetailsServiceConfigurer) throws Exception{
 
-        /*clientDetailsServiceConfigurer.inMemory()
-                .withClient("cliente")
-                .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit")
-                .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT","USER")
-                .scopes("read","write")
-                .autoApprove(true)
-                .secret(passwordEncoder().encode("password"));*/
+
         clientDetailsServiceConfigurer.inMemory()
                 .withClient("client")
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit")
