@@ -21,8 +21,7 @@ public class Drugs {
     @Column(name = "drugName")
     private String drugName;
 
-    @Max(500)
-    @Min(24)
+
     @Column(name = "pricePerUnit")
     private int priceperUnit;
 

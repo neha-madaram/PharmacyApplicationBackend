@@ -61,11 +61,6 @@ public class PbmController {
 
     @PostMapping("/createDrugs") //create with validations //ResponseEntity
     public Drugs createDrugs(@Valid @RequestBody Drugs drugs, BindingResult bindingResult) throws Exception {
-        if(bindingResult.hasErrors())
-        {
-            logger.info("invalid parameters provided");
-            throw new InvalidArgumentExceptions("enter correct details"); //
-        }
         return pbmService.createDrugs(drugs);
 
     }

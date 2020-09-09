@@ -89,12 +89,7 @@ public class PbmService {
     }
 
     public Drugs createDrugs(Drugs drugs) {
-        try {
             return drugsRepo.save(drugs);
-        }catch (Exception e)
-        {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid drug parameters", e);
-        }
     }
 
     public String deleteDrug(String drugId) {

@@ -13,7 +13,6 @@ import javax.persistence.*;
 @Data
 @Component
 @DynamicUpdate
-@Subselect("select p.patientId, r.rxId from patient p, Rx r where p.patientId = r.rxID.patientId ")
 public class Patients {
     @Id
     private String patientId;
