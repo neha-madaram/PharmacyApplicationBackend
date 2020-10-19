@@ -166,7 +166,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>PharmacyApplicationSprings</finalName>
+		<finalName>pharmacy-application-springs</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

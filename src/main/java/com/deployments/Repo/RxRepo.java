@@ -15,5 +15,7 @@ public interface RxRepo extends JpaRepository<Rx, String> {
     @Transactional
     @Query(value="update Rx set rxExpired = DATE_ADD(rxExpired, INTERVAL 1 month ) where patientId=?1", nativeQuery = true)
     void ExtendPrescription(String patientId);
-
+/*sdfcv
+    sdf
+        sdfg*/
 }

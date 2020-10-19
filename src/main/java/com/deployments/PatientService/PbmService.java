@@ -74,6 +74,7 @@ public class PbmService {
         r.setPriority(rxRequest.getPriority());
         try {
             r= prescriptionRequestRepo.save(rxRequest);
+            //
         }catch(DataIntegrityViolationException e){
           throw new DataIntegrityViolationException("Unable to request for an prescription that is already existing");
         }

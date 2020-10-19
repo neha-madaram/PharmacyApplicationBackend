@@ -1,0 +1,27 @@
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true
+#  datasource:
+#    driver-class: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://pharmacy.cs56dirbzcrm.us-east-1.rds.amazonaws.com:3306/pharmacy?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#    username: root
+#    password: root1234
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#      show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        jdbc:
+#          datasource:
+#            init:
+#              ScriptUtils: debug
+#
+#server:
+#  port: 5000
